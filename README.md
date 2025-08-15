@@ -76,12 +76,5 @@ streamlit run app.py
   - `CONFLUENCE_URL` (base URL, e.g. `https://yourdomain.atlassian.net/wiki`).
 - In the UI, supply **space key** and an optional **CQL** to filter pages (or a list of page IDs/URLs).
 
-## Production tips
-- Put the FAISS store on persistent storage (S3/EFS/Azure Files) for multi-instance apps.
-- Protect the app with SSO or Streamlit auth wrapper.
-- Use a background job/queue (Celery, RQ, Azure Functions) for large ingestions.
-- Add rate limiting and request logging (already scaffolded) and WAF at the edge.
-- Switch to pgvector/Weaviate/Pinecone by swapping `retriever.py` with your preferred vector DB.
-
 ## License
 MIT
