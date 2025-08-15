@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 
 ### 2) Environment variables
-Copy `.env.example` to `.env` and fill in at least one provider.
+Create `.env` and fill in at least one provider.
 
 #### If using OpenAI:
 ```
@@ -75,6 +75,17 @@ streamlit run app.py
   - `CONFLUENCE_USERNAME` and a **Confluence API token** as `CONFLUENCE_API_TOKEN`.
   - `CONFLUENCE_URL` (base URL, e.g. `https://yourdomain.atlassian.net/wiki`).
 - In the UI, supply **space key** and an optional **CQL** to filter pages (or a list of page IDs/URLs).
+
+## “First run” checklist
+- Download the Zip File from this repository
+```bash
+pip install -r requirements.txt
+cp .env.example .env
+streamlit run app.py
+```
+- In the Ingest tab: upload a PDF and click Ingest.
+- In Chat tab: ask a question; verify Sources show filename/page or Confluence URL.
+- In the Summarise tab, try both single files and the entire corpus.
 
 ## License
 MIT
