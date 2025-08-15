@@ -1,4 +1,4 @@
-# RAG Chatbot for Confluence & Documents (Streamlit + LangChain + FAISS)
+# RAG Chatbot for Confluence & Documents (LangChain + FAISS + Streamlit)
 
 A production-grade chatbot that explains/summarizes **Confluence pages**, **PDF**, **DOCX**, and **PPTX** documents using **LangChain**, **FAISS**, and **OpenAI or Azure OpenAI**. Frontend is built with **Streamlit**.
 
