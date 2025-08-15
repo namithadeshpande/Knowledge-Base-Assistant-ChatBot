@@ -58,16 +58,13 @@ streamlit run app.py
 ├── requirements.txt
 ├── .env.example
 ├── README.md
-├── data/
-│   └── vectorstore/              # persisted FAISS index
 ├── rag/
 │   ├── chain.py
 │   ├── config.py
 │   ├── ingest.py
 │   ├── retriever.py
 │   └── confluence_ingest.py
-└── utils/
-    └── logging_config.py
+├── logging_config.py
 ```
 
 ## Confluence notes
